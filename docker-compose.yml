@@ -1,0 +1,11 @@
+services:
+  db:
+    ports:
+      - 5442:5432
+    container_name: api-teste-docker
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=apiteste
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_USER=admin
