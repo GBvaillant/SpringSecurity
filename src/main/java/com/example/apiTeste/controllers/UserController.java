@@ -47,6 +47,7 @@ public class UserController {
         }
         userId.setLogin(user.getLogin());
         userId.setPassword(user.getPassword());
+        userId.setEmail(user.getEmail());
         var updateUser = userService.createUser(userId);
         return ResponseEntity.status(HttpStatus.OK).body(updateUser);
 

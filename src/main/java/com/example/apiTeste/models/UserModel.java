@@ -25,6 +25,7 @@ public class UserModel {
     UUID id;
 
     String login;
+    String email;
     String password;
 
 }
