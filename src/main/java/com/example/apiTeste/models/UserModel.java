@@ -24,7 +24,7 @@ public class UserModel {
     @GeneratedValue
     UUID id;
 
-    String login;
+    String name;
     String email;
     String password;
 
